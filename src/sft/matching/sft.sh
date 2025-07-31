@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=6,7 ACCELERATE_LOG_LEVEL=info accelerate launch --config_file src/sft/matching/deepspeed_zero3.yaml --num_processes=2 --main_process_port 1234 src/sft/matching/sft.py
